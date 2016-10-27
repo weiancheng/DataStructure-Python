@@ -17,10 +17,13 @@ def bubble_sort(array):
             if array[j] >= array[j+1]:
                 array[j], array[j+1] = array[j+1], array[j]  # swap
 
+    return array
+
 
 def main():
     array = [5, 4, 3, 2, 1]
-    bubble_sort(array)
+    sorting_array = bubble_sort(array)
+    print(sorting_array)
 
 if __name__ == "__main__":
     main()
